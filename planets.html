@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kovács András">
+    
+
+    <link rel="stylesheet" href="slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="slick-1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+    <link rel="icon" href="kepek/galactic-empire.ico" type="image/x-icon">
+
+    <style type="text/css">
+        .slider {
+            width: 80%;
+            min-width: 400px;
+            margin: 100px auto;
+        }
+        .slick-slide {
+            margin: 0px 5px;
+        }
+        .slick-slide img {
+            width: 100%;
+        }
+        .slick-prev:before, .slick-next:before {
+            color: white;
+        }
+        .slick-slide {
+            transition: all ease-in-out .3s;
+            opacity: 0.2;
+            transform: scale(0.8);
+        }
+        .slick-active {
+            opacity: .5;
+            transform: scale(0.8);
+        }
+        .slick-current {
+            opacity: 1;
+            z-index: 10;
+            transform: scale(1);
+        }
+    </style>
+
+    <title>Galaktikus Birodalom - Rendszerek és Bolygók</title>
+
+</head>
+
+<body onload="valaszt()">
+    <header>
+        <div class="cim">Galaktikus</div>
+        <div class="zaszlo"><img class="zaszlo" src="kepek/flag.png" alt="a zászló"></div>
+        <div class="cim">Birodalom</div>
+    </header>
+    <nav>
+        <div class="menu"><a class="menulink" href="index.html">Kezdőlap</a></div>
+        <div class="menu"><a class="menulink" href="birerok.html">Birodalmi Erők</a></div>
+        <div class="menu" id="current"><a class="menulink" href="#">Rendszerek és Bolygók</a></div>
+        <div class="menu"><a class="join" href="jelentkezes.html">Jelentkezz hozzánk!</a></div>
+
+    </nav>
+
+    <hr>
+    <h3 class="cimek">A Birodalom fennhatósága alatt álló legfontoassb bolygók</h3>
+    <hr>
+
+    <section class="center slider">
+        <div><a href="#coruscant"><img class="bolygo" src="kepek/bolygok/coruscant.png" alt="Coruscant" title="Coruscant"></a></div>
+        <div><a href="#tatooine"><img class="bolygo" src="kepek/bolygok/tatooine.png" alt="Tatooine" title="Tatooine"></a></div>
+        <div><a href="#mustafar"><img class="bolygo" src="kepek/bolygok/mustafar.png" alt="Mustafar" title="Mustafar"></a></div>
+        <div><a href="#endor"><img class="bolygo" src="kepek/bolygok/endor.gif" alt="Endor (Hold)" title="Endor"></a></div>
+        <div><a href="#corellia"><img class="bolygo" src="kepek/bolygok/corellia.png" alt="Corellia" title="Corellia"></a></div>
+        <div><a href="#eriadu"><img class="bolygo" src="kepek/bolygok/eriadu.gif" alt="Eriadu" title="Eriadu"></a></div>
+        <div><a href="#deathstar"><img class="bolygo" src="kepek/bolygok/deathstar.png" alt="Halálcsillag" title="Halálcsillag"></a></div>
+    </section>
+
+    <hr>
+    <article>
+    <div class="bevezeto2" id="coruscant">
+        <h4>Coruscant</h4>
+        <p>Coruscant a Galaktikus Birodalom fénylő központja. Az egész bolygót beborító metropolisz az egység és a rend megtestesítője, ahol a hatalmas Császári Palota büszkén emelkedik a magasba, hirdetve Palpatine császár bölcsességét és erejét. Coruscant ragyogó példája annak, hogyan vezethet a Birodalom egyesített és harmonikus jövőhöz, ahol a rend mindenek felett áll, és a galaxis minden szeglete ebből merít erőt.</p> 
+    </div>
+    <div class="menukep1">
+        <img class="erokep" src="kepek/bolygok/coruscant-kep.jpg" alt="Ez a kép a Coruscant-on készült">
+    </div>
+
+    <hr>
+    <div class="kozepso">
+    <div class="bevezeto2" id="tatooine">
+        <h4>Tatooine</h4>
+        <p>Ez a bolygó, bár távol esik a galaxis központjától, hűségesen szolgálja a Birodalmat, ahol a tüzes napok alatt a rend és a fegyelem uralkodik. A Mos Eisley-i kantin zsúfolásig megtelik azokkal, akik a Birodalom erejére áhítoznak, miközben a birodalmi hatóságok minden szegletet ellenőriznek. Tatooine szikrázó homokja alatt az igazi hatalom, a Birodalom uralkodik, aki a galaxis távoli peremén is az erő és a rend legmagasabb szintjét képviseli.</p> 
+    </div>
+    
+    <div class="menukep1">
+        <img class="erokep" src="kepek/bolygok/tatooine-kep.jpg" alt="Ez a kép a Tatooine-on készült">
+    </div>
+    </div>
+    <hr>
+
+    <div class="bevezeto2" id="mustafar">
+        <h4>Mustafar</h4>
+        <p>Egy vulkánokkal és lávával borított bolygó, ahol a hatalom és a szenvedés egyesül. Ez a kegyetlen világ a Birodalom szívétől távol helyezkedik el, de mégis elengedhetetlen építőköve a Galaxisnak. A lávafolyamok és a füstölgő kráterek között, a birodalmi erők titkos bázisai és ipari komplexumai rejtőznek, amelyek a Birodalom erejét szolgálják. A Mustafar Darth Vader hatalmának szimbóluma, hiszen itt található a Sötét Úr félelmetes erődítménye is.</p> 
+    </div>
+
+    <div class="menukep1">
+        <img class="erokep" src="kepek/bolygok/mustafar-kep.jpg" alt="Ez a kép a Mustafar-on készült">
+    </div>
+    <hr>
+    <div class="kozepso">
+        <div class="bevezeto2" id="endor">
+            <h4>Endor</h4>
+            <p>Endor a Birodalom méltóságteljes és rejtett erőtere, egy távoli, erdős bolygó, ahol a természet és a hatalom harmóniában találkozik. A Birodalom jelenléte itt erőteljes, hiszen a hatalmas erdők között birodalmi erődök és figyelőállomások rejtőznek, amelyek biztosítják a rend és biztonság megőrzését. Endor egy kulcsfontosságú stratégiai helyszín, ahol a Birodalom csendben készíti elő a jövőt, és ahol a birodalmi erők minden kémkedés és lázadás ellenére is éberen őrzik a galaxis békéjét. A bolygó szépsége és hatalma egyesül, és Endor a Birodalom dicsőséges jövőjének titkos szimbólumává válik.</p> 
+        </div>
+        
+        <div class="menukep1">
+            <img class="erokep" src="kepek/bolygok/endor-kep.jpeg" alt="Ez a kép az Endor-on készült">
+        </div>
+    </div>
+    <hr>
+    <div class="bevezeto2" id="corellia">
+        <h4>Corellia</h4>
+        <p>Ez a bolygó híres a csodálatos űrhajóépítő iparágáról, amely a Birodalom számára nélkülözhetetlen erőforrást biztosít, miközben a Corellian hajók híre világszerte ismert. A Corelliai városok ipara és precizitása szoros kapcsolatban áll a Birodalom hatalmával, amely itt biztosítja a galaxis stabilitását és erőteljes gazdaságát. A bolygó hatalmas űrkikötői és fejlett technológiai infrastruktúrája révén Corellia nemcsak a Birodalom logisztikai központja, hanem a galaxis erejének egyik legfontosabb oszlopa is. A Corelliai nép, bár független és kalandvágyó, a Birodalom dicsőséges uralma alatt büszkén szolgálja a galaktikus rendet.</p> 
+        </div>
+    
+    <div class="menukep1">
+        <img class="erokep" src="kepek/bolygok/corellia-kep.jpg" alt="Ez a kép a Corellia-n készült">
+    </div>
+    <hr>
+    <div class="kozepso">
+        <div class="bevezeto2" id="eriadu">
+            <h4>Eriadu</h4>
+            <p>A Birodalom ipari és gazdasági erejének központja, rendkívüli fontossággal bír a birodalmi logisztikában és katonai stratégiában. Eriadu ipara és fejlett infrastruktúrája lehetővé teszi a Birodalom számára, hogy hatalmas flottákat és fegyvereket gyártson, miközben a bolygó politikai irányítása biztosítja a galaktikus rendet. A Birodalom hatalmát tükröző hatalmas városok és ipari komplexumok uralják a bolygót, és az Eriadu-i elit a császár iránti lojalitása révén a Birodalom stabilitását szolgálja. Eriadu a rend és a fegyelem megtestesítője, ahol minden a Galaktikus Birodalom hatalmának és dicsőségének építésére irányul.</p> 
+        </div>
+    
+        
+        <div class="menukep1">
+            <img class="erokep" src="kepek/bolygok/eriadu-kep.jpg" alt="Ez a kép az Eriadu-n készült">
+        </div>
+    </div>
+    <hr>
+    <div class="bevezeto2" id="deathstar">
+        <h4>Halálcsillag</h4>
+        <p>A Halálcsillag a Galaktikus Birodalom legfényesebb és leghatalmasabb fegyvere, amely a császári hatalom elképzelhetetlen erejét szimbolizálja. Ez az űrbéli erőd nem csupán egy csillagromboló, hanem a Birodalom végső erejének és végzetének biztosítéka, amely képes egy egész bolygót megsemmisíteni egyetlen csapással. A Halálcsillag építése a Birodalom technológiai csúcspontja, amely az űrben a legnagyobb hatalmat képviseli.</p> 
+        </div>
+    
+        <div class="menukep1">
+            <img class="erokep" src="kepek/bolygok/deathstar-kep.jpg" alt="Ez a kép a Halálcsillagban készült">
+    </div>
+    <hr>
+
+
+
+</article>
+
+
+
+
+
+    <footer>
+        <a href="#" id="bnyelv"><img src="kepek/bnyelvkep.png" alt="Birodalom Zászlaja" id="bnyelvkep"></a>
+        <a href="#" id="mnyelv"><img src="kepek/mnyelvkep.png" alt="Magyarország Zászlaja" id="mnyelvkep"></a>
+        <div class="nevem">Kovács András</div>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="slick-1.8.1/slick/slick.js" type="text/javascript" charset="utf-8"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.center').slick({
+                centerMode: true,
+                centerPadding: '0px',
+                slidesToShow: 3,
+                responsive: [
+                  {
+                    breakpoint: 768,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '70px',
+                        slidesToShow: 1
+                    }
+                  }
+                ]
+              });
+        });
+    </script>
+</body>
+
+</html>

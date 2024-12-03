@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kovács András">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="kepek/galactic-empire.ico" type="image/x-icon">
+    <title>Galaktikus Birodalom - Jelentekés</title>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="jquery-validation-1.19.5/dist/jquery.validate.min.js"></script>
+
+</head>
+<body onload="valaszt()">
+    <header>
+        <div class="cim">Galaktikus</div>
+        <div class="zaszlo"><img class="zaszlo" src="kepek/flag.png" alt="a zászló"></div>
+        <div class="cim">Birodalom</div>
+    </header>
+    <nav>
+        <div class="menu"><a class="menulink" href="index.html">Kezdőlap</a></div>
+        <div class="menu"><a class="menulink" href="birerok.html">Birodalmi Erők</a></div>
+        <div class="menu"><a class="menulink" href="planets.html">Rendszerek és Bolygók</a></div>
+        <div class="menu" id="current"><a class="join" href="#">Jelentkezz hozzánk!</a></div>
+
+    </nav>
+    <div class="jelenbev">
+        <h3 class="háhárom"> Legyél büszke tagja a Birodalomnak!</h3><br>
+        <h5>Jelentkezz még ma a Galaktikus Birodalom sorai közé és válj azzá aki mindig is akartál lenni!</h5><br>
+        <div class="urlap">
+            <form action="http://rf.uni-corvinus.hu/webfejlesztes/receive.php" id="myform" target="_blank">
+                <label>Név: <input type="text" name="nev" id="urnev" size="20"></label><span id="hibanev"></span><br><br>
+                <label>Születés: <input type="date" name="szuldate" id="urszul"></label><span id="hibaszul"></span><br><br>
+                <label>Email: <input type="email" name="email" size="20" id="uremail"></label><span id="hibaemail"></span><br><br>
+
+                Specializáció választása: <br>
+                <label><input type="radio" name="osztaly" value="rohamosztagos">Rohamosztagos</label><br>
+                <label><input type="radio" name="osztaly" value="pilota">Pilóta</label><br>
+                <label><input type="radio" name="osztaly" value="tiszt">Tiszt</label><br><br>
+
+                <label><input type="checkbox" name="elfogad" id="elfogad">Elolvastam és elfogadom a Jelentkezés Feltételeit</label><br><br>
+                <p id="nincselfogadva">Fogadd el a Jelentkezési Feltételeket!</p>
+                <input type="button" id="mybutton" value="Jelentkezés Feltételeiről bővebben">
+                <div id="lenyilo">
+                    <p>A Galaktikus Birodalom soraiba csak a legelhivatottabb jelentkezőket várjuk, akik készen állnak arra, hogy életüket a rend, a stabilitás és a Birodalom dicsőségének szolgálatába állítsák. Minden jelentkezőnek meg kell felelnie az alábbi feltételeknek: (1)Korhatár: A jelentkezéshez elengedhetetlen, hogy a pályázó betöltse a 18. életévét. Ez biztosítja, hogy érett, felelősségteljes döntést hozzon a Birodalomhoz való csatlakozásról. (2)Állampolgárság: A Birodalomhoz való hűség az alapoknál kezdődik, ezért kizárólag a Galaktikus Birodalom állampolgárai pályázhatnak. Az állampolgárság igazolása kötelező, hiszen a Birodalom jövője csak a lojalitásra és a közös értékekre épülhet. (3)Elköteleződés: A Birodalom ereje az egységben rejlik. Minden jelentkezőnek vállalnia kell, hogy a felvételt követően legalább 10 évig teljes elkötelezettséggel szolgálja a Birodalmat. Ez az időszak garantálja, hogy a jelentkezők nemcsak a katonai és stratégiai képességeiket fejlesztik, hanem mélyen elsajátítják a birodalmi eszméket és hűséget tanúsítanak a vezetés iránt.</p>
+                </div><br><br>
+                
+                <input type="submit" id="submit" value="Jelentkezés">
+                
+
+
+            </form>
+        </div>
+        
+    </div>
+
+
+
+
+
+    <div class="jelenkep">
+        <img src="kepek/jelentkezes/csatlakozz.png" alt="Jelentkezz a Birodalomhoz!" class="csatlakozz">
+    </div>
+        
+    </article>
+    
+    <footer>
+        <a href="#" id="bnyelv"><img src="kepek/bnyelvkep.png" alt="Birodalom Zászlaja" id="bnyelvkep"></a>
+        <a href="#" id="mnyelv"><img src="kepek/mnyelvkep.png" alt="Magyarország Zászlaja" id="mnyelvkep"></a>
+        <div class="nevem">Kovács András</div>
+    </footer>
+
+    <script>
+        $(document).ready(function(){
+            $("#myform").validate({
+                rules:{
+                    nev: {
+                        required: true
+                    },
+                    szul: {
+                        required: true
+                    },
+                    email:{
+                        required: true,
+                        email: true
+                    
+                    },
+                    osztaly: {
+                        required: true
+                    },
+                    elfogad: {
+                        required: true
+                    }
+                },
+                messages:{
+                    nev: " Add meg a neved!",
+                    szul: " Add meg a születési dátumodat!",
+                    email: " Kérlek valós emailt adj meg!",
+                    osztaly: "Add meg melyik specifikációra szeretnél jelentkezni!",
+                    elfogad: " Fogadd el a Jelentkezési Feltételeket!"
+                }
+            });
+        });
+
+    </script>
+    <script src="js/script.js"></script>
+</body>
+</html>

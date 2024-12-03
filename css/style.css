@@ -1,0 +1,357 @@
+*{box-sizing: border-box;}
+
+@font-face {
+    font-family: "aube";
+    src: url(../fonts/Aurek-Besh1.ttf);
+}
+
+
+body{
+    margin: 0;
+    font-family: sans-serif;
+    color: white;
+    background-image: url("../kepek/halalcsillag.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+header{
+    flex-basis: 100%;
+    background-color: rgb(62, 62, 62);
+    height: 15vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
+}
+footer{
+    flex-basis: 100%; 
+    background-color: rgb(56, 33, 33);
+    display: flex;
+
+}
+div{
+    display:flex;
+}
+div.zaszlo{
+    justify-content: center;
+    height: 150%;
+}
+div.cim{
+    align-items: center;
+    color:white;
+    font-variant: small-caps;
+    font-weight: bold;
+    font-size: 4vh;
+}
+nav{
+    width: 100%;
+
+    background-color: rgb(97, 97, 97);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 15px;
+    color: white;
+    font-weight: bold;
+
+}
+a.join{
+    color: rgb(205, 102, 102);
+    text-decoration: none;
+    text-decoration: none;
+
+}
+div.menu{
+    flex-basis: 100%;
+    justify-content: center;
+    padding: 8px;
+    font-size: 3vh;
+}
+
+a.menulink{
+    text-decoration: none;
+    color: white;
+}
+
+div.menu:hover{
+    background-color: rgb(72, 72, 72);
+
+}
+
+div.fokep{
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+div.menukep1{
+    display: flex;
+    justify-content: center;
+}
+
+div.jelenkep{
+    flex-basis: 100%;
+    justify-content: center;
+}
+div.nevem{
+    float: right;
+    height: 7vh;
+    align-items: center;
+    margin-right: 2vh;
+}
+/*Képek*/
+img.mainkep{
+    height: 70vh;
+    object-fit: cover;
+    object-position: center;
+}
+img.empire1{
+    width: 100%;
+    margin: 5%;
+    border: 1vh solid gray;
+}
+img.erokep{
+
+    align-items: center;
+    height: 50vh;
+}
+img.csatlakozz{
+    height: 70vh;
+    margin: 2vh;
+}
+img#bnyelvkep{
+    height: 5vh;
+    margin: 1vh;
+    display: inline;
+}
+img#mnyelvkep{
+    height: 5vh;
+    margin: 1vh;
+    display: none;
+}
+
+imd.pkep{
+    align-items: center;
+    height: 50vh;
+}
+
+
+
+
+
+h3.cimek{
+    text-align: center;
+    width: 100%;
+}
+
+div#current{
+    background-color: rgb(72, 72, 72);
+}
+
+div.bevezeto{
+    text-align: center;
+}
+div.bevezeto2{
+    text-align: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+div.bevezeto2 h4{
+    width: 100%;
+
+}
+div.kozepso{
+    flex-direction: column;
+}
+
+div.urlap{
+    border: 1px solid white;
+    flex-basis: 100%;
+    margin: 5vh;
+    padding: 2vh;
+    text-align: left;
+}
+
+
+div.jelenbev{
+    flex-basis: 100%;
+    text-align: center;
+    flex-wrap: wrap;
+}
+div.jelenbev h3, h5{
+    width: 100%;
+}
+
+
+
+
+hr{
+    width: 90%;
+}
+
+a.jelentkezes{
+    width: 200px;
+    height: 50px;
+    background-color: rgb(90, 37, 37);
+    color: white;
+    margin: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+div.jelentkezes{
+    justify-content: center;
+    flex-basis: 100%;
+}
+
+
+#urnev{
+    background-color: black;
+    border: 0;
+    border-bottom: 1px solid white;
+    color: white;
+}
+#urszul{
+    color-scheme: dark;
+}
+#uremail{
+    background-color: black;
+    border: 0;
+    border-bottom: 1px solid white;
+    color: white;
+}
+#mybutton{
+    font-size: 14px;
+    color: white;
+    background-color: rgb(39, 39, 39);
+    border: 1px solid white;
+    height: 5vh;
+    width: 40vh;
+}
+div#lenyilo{
+    background-color: rgb(39, 39, 39);
+    display: none;
+    width: 40vh;
+    border: 1px solid white;
+    border-top: 0;
+    font-size: 2vh;
+    padding: 2vh;
+}  
+#submit{
+    font-size: 14px;
+    height: 5vh;
+    border: 2px solid white;
+    background-color: rgb(198, 198, 198);
+}
+
+#hibanev, #hibaszul, #hibaemail, #nincselfogadva{
+    color: red;
+}
+
+#nincselfogadva{
+    display: none;
+    margin-top: 0;
+}
+
+
+
+label.error{
+    color: red;
+}
+
+
+@media only screen and (min-width: 600px){
+    nav{
+        flex-direction: row;
+        flex-wrap: nowrap;
+        height: 20vh;
+      }
+      div.menu{
+          flex-basis: 25%;
+          height: 10vh;
+          align-items: center;
+          margin: 10px;
+          border-radius: 3px;
+      }
+      
+      div#current{
+          border: 2px solid black;
+      }
+      div.menu:hover{
+          border: 2px solid black;
+      }
+      
+
+}
+
+
+
+
+
+
+
+@media only screen and (min-width: 768px) {
+
+
+
+
+
+img.mainkep{
+    width: 100%;
+}
+div.bevezeto{
+    justify-content: center;
+}
+
+p.bevezeto{
+  width: 50%;
+}
+
+div.bevezeto2{
+    width: 50%;
+    padding: 0 5%;
+    height: 50vh;
+    align-items: center;
+
+}
+div.menukep1{
+    width: 50%;
+    padding: 0 5%;
+}
+
+div.kozepso{
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+
+div.jelenbev{
+    flex-basis: 70%;
+    float: right;
+}
+div.jelenkep{
+    flex-basis: 30%;
+}
+img.csatlakozz{
+    height: auto;
+    width: 90%;
+    margin-top: 15vh;
+}
+
+
+
+
+article{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+}
+
