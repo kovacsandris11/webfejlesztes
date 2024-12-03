@@ -3,7 +3,7 @@ Beadandó
 
 KOVÁCS ANDRÁS - ZMHGVJ
 
-URL:
+URL: https://kovacsandris11.github.io/webfejlesztes/
 
 Rövid leírás:
 A weblapom a Star Wars univerzumában megtalálható Galaktikus Birodalomnak egy lehetséges honlapját akarja tükrözni. Tehát a szövegezése is egyfajta propaganda érzetet ad, hogy tényleg a fikcionális univerzumban érezzük magunkat.
